@@ -13,7 +13,7 @@ variable "db_instance_class" {
 }
 variable "engine_version" { 
     type = string 
-    default = "15.9" 
+    default = "14.4" 
 }
 variable "allocated_storage" { 
     type = number 
