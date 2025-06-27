@@ -99,7 +99,7 @@ module "lambda_iam_role" {
         Action = [
           "bedrock-runtime:InvokeModel"
         ],
-        Resource = "arn:aws:bedrock:us-east-1::foundation-model/*"
+        Resource = "arn:aws:bedrock:ap-south-1::foundation-model/*"
       }
     ]
   })
