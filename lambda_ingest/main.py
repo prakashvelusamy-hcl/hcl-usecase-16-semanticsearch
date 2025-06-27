@@ -10,7 +10,7 @@ import urllib.parse
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-REGION = os.environ.get("AWS_REGION", "us-east-1")
+REGION = os.environ.get("AWS_REGION", "ap-south-1")
 SECRET_NAME = os.environ["DB_SECRET_NAME"]
 MODEL_ID = "amazon.titan-embed-text-v2:0"
 EXPECTED_VECTOR_DIM = 1024
