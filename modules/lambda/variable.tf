@@ -4,9 +4,9 @@ variable "function_name" {
 variable "s3_bucket" { 
   type = string 
 }
-variable "s3_key" { 
-  type = string 
-}
+# variable "s3_key" { 
+#   type = string 
+# }
 variable "handler" { 
   type = string
   default = "main.lambda_handler" 
