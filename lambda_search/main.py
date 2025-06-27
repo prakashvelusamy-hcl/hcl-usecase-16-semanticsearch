@@ -4,7 +4,7 @@ import boto3
 import psycopg2
 
 SECRET_NAME = os.environ['DB_SECRET_NAME']
-REGION = os.environ.get('AWS_REGION', 'us-east-1')
+REGION = os.environ.get('AWS_REGION', 'ap-south-1')
 
 def get_db_credentials():
     client = boto3.client('secretsmanager', region_name=REGION)

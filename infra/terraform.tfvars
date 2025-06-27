@@ -1,11 +1,11 @@
-raw_bucket_name         = "semantic-search-raw-ddd"
+raw_bucket_name         = "prakash-semantic-search-raw"
 # processed_bucket_name   = "semantic-search-processed-ddd"
 
 name = "demo"
-vpc_cidr             = "10.0.0.0/16"
-availability_zones   = ["us-east-1a", "us-east-1b"]
-public_subnet_cidrs  = ["10.0.6.0/24", "10.0.7.0/24"]
-private_subnet_cidrs = ["10.0.4.0/24", "10.0.5.0/24"]
+vpc_cidr             = "10.10.0.0/16"
+availability_zones   = ["ap-south-1a", "ap-south-1b"]
+public_subnet_cidrs  = ["10.10.6.0/24", "10.10.7.0/24"]
+private_subnet_cidrs = ["10.10.4.0/24", "10.10.5.0/24"]
 create_nat_gateway   = true
 
 lambda_egress_rules = [
@@ -59,6 +59,6 @@ lambda_policy_arns      = [
 api_name                = "semantic-search-api"
 
 tags = {
-  Project = "SemanticSearch"
+  Project = "prakash-SemanticSearch"
   Env   = "dev"
 }
