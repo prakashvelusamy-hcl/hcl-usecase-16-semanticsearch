@@ -1,7 +1,7 @@
 import boto3
 import os
 import psycopg2
-import fitz  # PyMuPDF
+import fitz  
 import tiktoken
 import logging
 import urllib.parse
@@ -10,7 +10,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 SECRET_NAME = os.environ['DB_SECRET_NAME']
-REGION = os.environ.get('AWS_REGION', 'us-east-1')
+REGION = os.environ.get('AWS_REGION', 'ap-south-1')
 
 def get_db_credentials():
     logger.info("Fetching database credentials from Secrets Manager")
